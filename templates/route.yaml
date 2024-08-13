@@ -1,0 +1,74 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: nationalparks
+  namespace: native-aah2
+  uid: 36942d00-b20b-4281-b7a3-15160e167aac
+  resourceVersion: '298837'
+  creationTimestamp: '2024-08-13T08:47:56Z'
+  labels:
+    app: nationalparks
+    app.kubernetes.io/component: nationalparks
+    app.kubernetes.io/instance: nationalparks
+    type: parksmap-backend
+  annotations:
+    openshift.io/host.generated: 'true'
+  managedFields:
+    - manager: kubectl-expose
+      operation: Update
+      apiVersion: route.openshift.io/v1
+      time: '2024-08-13T08:47:56Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:labels':
+            .: {}
+            'f:app': {}
+            'f:app.kubernetes.io/component': {}
+            'f:app.kubernetes.io/instance': {}
+        'f:spec':
+          'f:port':
+            .: {}
+            'f:targetPort': {}
+          'f:to':
+            'f:kind': {}
+            'f:name': {}
+            'f:weight': {}
+          'f:wildcardPolicy': {}
+    - manager: openshift-router
+      operation: Update
+      apiVersion: route.openshift.io/v1
+      time: '2024-08-13T08:47:56Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:status':
+          'f:ingress': {}
+      subresource: status
+    - manager: Mozilla
+      operation: Update
+      apiVersion: route.openshift.io/v1
+      time: '2024-08-13T10:05:53Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:labels':
+            'f:type': {}
+spec:
+  host: nationalparks-native-aah2.apps.cluster-fjcrh.fjcrh.sandbox404.opentlc.com
+  to:
+    kind: Service
+    name: nationalparks
+    weight: 100
+  port:
+    targetPort: 8080-tcp
+  wildcardPolicy: None
+status:
+  ingress:
+    - host: nationalparks-native-aah2.apps.cluster-fjcrh.fjcrh.sandbox404.opentlc.com
+      routerName: default
+      conditions:
+        - type: Admitted
+          status: 'True'
+          lastTransitionTime: '2024-08-13T08:47:56Z'
+      wildcardPolicy: None
+      routerCanonicalHostname: router-default.apps.cluster-fjcrh.fjcrh.sandbox404.opentlc.com
