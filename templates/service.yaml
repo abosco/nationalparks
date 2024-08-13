@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: nationalparks
-  namespace: native-aah2
+  namespace: native-aah
   uid: 364e12ea-94bd-49b1-9c86-28bd8297d93d
   resourceVersion: '299086'
   creationTimestamp: '2024-08-13T08:44:48Z'

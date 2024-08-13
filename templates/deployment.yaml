@@ -159,7 +159,7 @@ metadata:
           'f:replicas': {}
           'f:updatedReplicas': {}
       subresource: status
-  namespace: native-aah2
+  namespace: native-aah
   labels:
     app: nationalparks
     app.kubernetes.io/component: nationalparks
@@ -215,7 +215,7 @@ spec:
             failureThreshold: 3
           terminationMessagePolicy: File
           image: >-
-            image-registry.openshift-image-registry.svc:5000/native-aah2/nationalparks@sha256:18e5ef485a6ad2b5e1ca9543801504c1b177f33111a6eee3d377d39e4cdef304
+            image-registry.openshift-image-registry.svc:5000/native-aah/nationalparks:latest
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
       dnsPolicy: ClusterFirst

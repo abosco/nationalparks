@@ -2,7 +2,7 @@ kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: route-reader-0
-  namespace: native-aah2
+  namespace: native-aah
   uid: 384b0b67-b909-44c4-be27-d849ab049690
   resourceVersion: '308020'
   creationTimestamp: '2024-08-13T10:25:22Z'
@@ -18,7 +18,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: default
-    namespace: native-aah2
+    namespace: native-aah
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
@@ -28,7 +28,7 @@ kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: svc-reader-0
-  namespace: native-aah2
+  namespace: native-aah
   uid: 63ab6183-a4d0-45b8-bb8b-2bcd305e0751
   resourceVersion: '308655'
   creationTimestamp: '2024-08-13T10:26:45Z'
@@ -44,7 +44,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: default
-    namespace: native-aah2
+    namespace: native-aah
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
@@ -54,7 +54,7 @@ kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: endpoint-reader
-  namespace: native-aah2
+  namespace: native-aah
   uid: 25478082-f49b-4d33-abfe-30d960d7271c
   resourceVersion: '310272'
   creationTimestamp: '2024-08-13T10:30:16Z'
@@ -70,7 +70,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: default
-    namespace: native-aah2
+    namespace: native-aah
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role

@@ -2,7 +2,7 @@ kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: route-reader
-  namespace: native-aah2
+  namespace: native-aah
   uid: c8a3683f-79bb-4ecf-aaae-d46f64c81b80
   resourceVersion: '309531'
   creationTimestamp: '2024-08-13T10:28:44Z'
@@ -28,7 +28,7 @@ kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: svc-reader
-  namespace: native-aah2
+  namespace: native-aah
   uid: be778882-1ab9-4d2c-bf4a-8e41da3bd868
   resourceVersion: '309378'
   creationTimestamp: '2024-08-13T10:28:21Z'
@@ -54,7 +54,7 @@ kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: endpoint-reader
-  namespace: native-aah2
+  namespace: native-aah
   uid: 85302e20-9729-4c3a-8a0c-ac248fb7b17a
   resourceVersion: '310128'
   creationTimestamp: '2024-08-13T10:30:01Z'

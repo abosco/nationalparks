@@ -2,7 +2,7 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: nationalparks
-  namespace: native-aah2
+  namespace: native-aah
   uid: 36942d00-b20b-4281-b7a3-15160e167aac
   resourceVersion: '298837'
   creationTimestamp: '2024-08-13T08:47:56Z'
@@ -54,7 +54,7 @@ metadata:
           'f:labels':
             'f:type': {}
 spec:
-  host: nationalparks-native-aah2.apps.cluster-fjcrh.fjcrh.sandbox404.opentlc.com
+  host: nationalparks-native-aah.apps.cluster-fjcrh.fjcrh.sandbox404.opentlc.com
   to:
     kind: Service
     name: nationalparks
@@ -64,7 +64,7 @@ spec:
   wildcardPolicy: None
 status:
   ingress:
-    - host: nationalparks-native-aah2.apps.cluster-fjcrh.fjcrh.sandbox404.opentlc.com
+    - host: nationalparks-native-aah.apps.cluster-fjcrh.fjcrh.sandbox404.opentlc.com
       routerName: default
       conditions:
         - type: Admitted
